@@ -42,7 +42,7 @@ func GenerateCSV() {
 	defer writer.Flush()
 
 	// Tulis header ke file CSV
-	header := []string{"OID", "CIF", "COUNTER", "STATUS_PDN_PEKERJAAN"}
+	header := []string{"field_1", "field_2", "field_3", "field_4"}
 	err = writer.Write(header)
 	if err != nil {
 		fmt.Println("Error menulis header ke file CSV:", err)
