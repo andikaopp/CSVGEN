@@ -1,7 +1,7 @@
 package main
 
-import "CSVGEN/internal/csvgenerator"
+import "CSVGEN/internal/sqlgenerator"
 
 func main() {
-	csvgenerator.GenerateCSV()
+	sqlgenerator.GenerateSql()
 }
