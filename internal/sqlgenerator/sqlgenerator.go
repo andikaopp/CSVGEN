@@ -3,14 +3,13 @@ package sqlgenerator
 import (
 	"bufio"
 	"fmt"
-	"os"
-
 	"github.com/google/uuid"
+	"os"
 )
 
 func GenerateSql() {
 	// Buka file txt dan scan file
-	txtFile, err := os.Open("file.txt")
+	txtFile, err := os.Open("input/file.txt")
 	if err != nil {
 		fmt.Println("Error membuka file txt:", err)
 		return
