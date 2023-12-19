@@ -3,12 +3,13 @@ package sqlgenerator
 import (
 	"bufio"
 	"fmt"
-	"github.com/google/uuid"
 	"os"
+
+	"github.com/google/uuid"
 )
 
 func GenerateSql() {
-	// Buka file txt dan scan file
+	// Buka file txt dan scan file tersebut
 	txtFile, err := os.Open("input/file.txt")
 	if err != nil {
 		fmt.Println("Error membuka file txt:", err)
@@ -16,7 +17,7 @@ func GenerateSql() {
 	}
 	defer txtFile.Close()
 
-	// Baca isi file txt
+	// Baca isi file txt tersebut
 	var kodeUnikSlice []string
 	scanner := bufio.NewScanner(txtFile)
 	for scanner.Scan() {
